@@ -21,7 +21,8 @@ p {
     color: rgb(69, 68, 68);
     line-height: 1.5;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
 }
@@ -100,16 +101,19 @@ a{
 .nav_left i {
     font-size: 2rem;
     color: rgb(51, 145, 51);
+    cursor: pointer;
 }
 
 .nav_left>h1 span {
     font-size: 2rem;
     color: rgb(51, 145, 51);
+    cursor: pointer;
 }
 
 .nav_left>h1 {
     font-size: 2rem;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -137,7 +141,7 @@ a{
     overflow: hidden;
 }
 
-.blog_container{
+.blog_container {
     display: flex;
 }
 
@@ -164,7 +168,7 @@ a{
     color: white;
 }
 
-#blog .right .btn{
+#blog .right .btn {
     border: 1px solid white;
     width: fit-content;
     padding: 1rem 1.6rem;
@@ -204,6 +208,47 @@ a{
     transform: 0.5s;
     color: rgb(142, 234, 4);
 }
-#footer p{
-color: white;
+
+#footer p {
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+
+    h1 {
+        font-size: 38px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #hero {
+        height: auto;
+    }
+
+    
+
+    .blog_container {
+        display: block;
+    }
+
+   
+
+    .nav_container {
+        display: block;
+    }
+
+    .nav_right ul li a {
+        font-size: 15px;
+    }
+
+    .nav_right ul {
+        gap: 0;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
 }
